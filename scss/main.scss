@@ -3,6 +3,7 @@
 :root {
   --color-primary: #facc15;
   --color-secondary: #34d399;
+  --bg-color: #e2e8f0;
   --color-white: #fff;
   --color-grey: #777;
 }
@@ -46,7 +47,7 @@ body {
       flex: 1;
       height: 3.5rem;
       font-size: 1.6rem;
-      background: #e2e8f0;
+      background: var(--bg-color);
       padding: 0 1rem;
       border: none;
       border-radius: 2rem;
@@ -153,6 +154,45 @@ body {
 }
 
 .main-content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 2.5rem;
+  background: var(--bg-color);
+  padding: 3.5rem 0;
+
+  .project {
+    grid-row: span 2;
+    padding-left: 2rem;
+
+    .project__wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+      // grid-template-rows: repeat(auto-fit, minmax(20rem, 1fr));
+      gap: 2rem;
+
+      .project__card {
+        color: var(--color-grey);
+        font-size: 1.8rem;
+        background: var(--color-white);
+        padding: 3.5rem 2rem;
+        border-left: 1rem solid var(--color-primary);
+        border-radius: 1rem;
+
+        h2 {
+          color: black;
+        }
+
+        .card__icons {
+          display: flex;
+          justify-content: flex-end;
+          gap: 3rem;
+          margin-top: 2rem;
+          margin-right: 3rem;
+        }
+      }
+    }
+  }
+
   .trending {
     img {
       width: 5rem;
