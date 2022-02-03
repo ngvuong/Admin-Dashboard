@@ -11,13 +11,20 @@
     <div class="container">
       <header class="header">
         <div class="search">
-          <img src="" alt="Search icon" />
-          <input type="search" class="search__bar" />
+          <label for="search-input"><img src="" alt="Search icon" /></label>
+          <input type="search" id="search-input" />
         </div>
         <div class="profile">
-          <img src="" alt="Notifications icon" />
-          <img src="" alt="" class="profile__icon" />
-          <span class="profile__name"></span>
+          <img
+            src="https://avatars.dicebear.com/api/human/123.svg"
+            alt="Notifications icon"
+          />
+          <img
+            src="https://avatars.dicebear.com/api/avataaars/abc.svg"
+            alt=""
+            class="profile__icon"
+          />
+          <span class="profile__name">Vuong Nguyen</span>
         </div>
         <div class="header__user">
           <img src="" alt="" />
@@ -33,43 +40,27 @@
         </div>
       </header>
       <section class="sidebar">
-        <div class="sidebar__Logo">
+        <div class="sidebar__logo">
           <img src="" alt="Dashboard logo" />
-          DashBoard
+          Dashboard
         </div>
         <nav class="sidebar__nav">
-          <ul class="nav--main">
-            <li class="nav__item">
-              <img src="" alt="" />
-              Home
-            </li>
-            <li class="nav__item">
-              <img src="" alt="" />
-              Profile
-            </li>
-            <li class="nav__item">
-              <img src="" alt="" />
-              Messages
-            </li>
-            <li class="nav__item">
-              <img src="" alt="" />
-              History
-            </li>
-            <li class="nav__item">
-              <img src="" alt="" />
-              Tasks
-            </li>
-            <li class="nav__item">
-              <img src="" alt="" />
-              Communities
-            </li>
+          <ul>
+            <li class="nav__item"><img src="" alt="" />Home</li>
+            <li class="nav__item"><img src="" alt="" />Profile</li>
+            <li class="nav__item"><img src="" alt="" />Messages</li>
+            <li class="nav__item"><img src="" alt="" />History</li>
+            <li class="nav__item"><img src="" alt="" />Tasks</li>
+            <li class="nav__item"><img src="" alt="" />Communities</li>
           </ul>
-          <ul class="nav--sub">
-            <li class="config__item"><img src="" alt="" /> Settings</li>
+        </nav>
+        <div class="sidebar__config">
+          <ul>
+            <li class="config__item"><img src="" alt="" />Settings</li>
             <li class="config__item"><img src="" alt="" />Support</li>
             <li class="config__item"><img src="" alt="" />Privacy</li>
           </ul>
-        </nav>
+        </div>
       </section>
       <main class="main-content">
         <section class="project">
