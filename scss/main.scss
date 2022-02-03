@@ -47,6 +47,21 @@ body {
 
   .profile {
     justify-self: center;
+
+    .profile__icon {
+      width: 5rem;
+      background: #facc15;
+      border-radius: 50%;
+    }
+  }
+
+  .header__user {
+    display: flex;
+    img {
+      width: 8rem;
+      background: #facc15;
+      border-radius: 50%;
+    }
   }
 
   .header__btns {
@@ -79,14 +94,26 @@ body {
   background: var(--color-secondary);
 
   .sidebar__logo {
+    display: flex;
+    align-items: center;
     font-size: 3.5rem;
     padding: 2.5rem 0 0 2.5rem;
+
+    svg {
+      width: 5rem;
+      height: 5rem;
+      margin-right: 1rem;
+    }
   }
 
   ul {
     font-size: 2rem;
     padding: 0 3.5rem;
     list-style: none;
+
+    li {
+      margin-bottom: 1.5rem;
+    }
 
     img {
       margin-right: 1.5rem;
