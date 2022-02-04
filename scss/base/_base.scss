@@ -5,3 +5,15 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --color-primary: #facc15;
+  --color-secondary: #34d399;
+  --bg-color: #e2e8f0;
+  --color-white: #fff;
+  --color-grey: #777;
+}
+
+html {
+  font-size: 62.5%;
+}

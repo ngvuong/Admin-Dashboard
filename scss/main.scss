@@ -1,26 +1,13 @@
 @import "base/base";
 
-:root {
-  --color-primary: #facc15;
-  --color-secondary: #34d399;
-  --bg-color: #e2e8f0;
-  --color-white: #fff;
-  --color-grey: #777;
-}
-
-html {
-  font-size: 62.5%;
-}
-
 body {
+  font-family: "Oswald", sans-serif;
   font-size: 1.6rem;
 }
 
 .container {
   display: grid;
   grid-template-columns: minmax(250px, 1fr) 4fr;
-  // grid-template-rows: auto auto;
-  // min-height: 100vh;
 }
 
 .header {
@@ -107,13 +94,13 @@ body {
       padding: 1.2rem 2rem;
       border: none;
       border-radius: 3rem;
+      cursor: pointer;
     }
   }
 }
 
 .sidebar {
   display: grid;
-  // grid-template-rows: 100px auto auto;
   align-content: start;
   gap: 5rem;
   grid-row: 1 / span 2;
@@ -165,12 +152,12 @@ body {
   }
 
   .project {
+    grid-row: span 2;
     padding-left: 2rem;
 
     .project__wrapper {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-      // grid-template-rows: repeat(auto-fit, minmax(20rem, 1fr));
       gap: 2rem;
 
       .project__card {
@@ -211,6 +198,10 @@ body {
       padding: 2rem;
       border-radius: 1rem;
 
+      div {
+        padding: 1.5rem 0;
+      }
+
       div p {
         font-size: 1.3rem;
       }
@@ -221,9 +212,28 @@ body {
   }
 
   .trending {
-    margin-top: 3rem;
+    grid-column: 2;
+    align-self: end;
+
+    ul {
+      background: var(--color-white);
+      padding-left: 2rem;
+      border-radius: 1rem;
+
+      li {
+        display: flex;
+        align-items: center;
+        padding: 1.5rem 0;
+
+        p:last-child {
+          color: var(--color-grey);
+        }
+      }
+    }
+
     img {
       width: 5rem;
+      margin-right: 1.5rem;
       border-radius: 50%;
     }
 
