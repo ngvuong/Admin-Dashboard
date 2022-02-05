@@ -1,9 +1,5 @@
 @import "base/base";
-
-body {
-  font-family: "Oswald", sans-serif;
-  font-size: 1.6rem;
-}
+@import "base/typography";
 
 .container {
   display: grid;
