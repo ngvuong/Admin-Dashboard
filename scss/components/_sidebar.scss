@@ -1,0 +1,40 @@
+.sidebar {
+  display: grid;
+  align-content: start;
+  gap: 5rem;
+  grid-row: 1 / span 2;
+  min-height: 100vh;
+  color: var(--color-white);
+  font-weight: bold;
+  background: var(--color-secondary);
+
+  .sidebar__logo {
+    display: flex;
+    align-items: center;
+    font-size: 3.5rem;
+    padding: 2.5rem 0 0 2.5rem;
+
+    svg {
+      width: 5rem;
+      height: 5rem;
+      margin-right: 1rem;
+    }
+  }
+
+  ul {
+    font-size: 2rem;
+    padding: 0 3.5rem;
+    list-style: none;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    img {
+      margin-right: 1.5rem;
+    }
+  }
+}
